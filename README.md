@@ -1,4 +1,4 @@
-TWD PROYECT — Reto Web
+TDW PROYECT — Reto Web
 
 Proyecto desarrollado como parte del reto TDW (JL) - Tecnología Digital Web, cuyo objetivo es reconocer tecnologías para el desarrollo de aplicaciones web mediante una página básica hecha con Python, Flask, HTML, CSS, JavaScript y Tailwind CSS.
 

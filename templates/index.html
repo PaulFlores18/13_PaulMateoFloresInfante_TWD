@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reto Flask + Tailwind + JS</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}" />
+</head>
+<body class="bg-slate-100 min-h-screen flex items-center justify-center p-6">
+
+  <main class="bg-white shadow-xl rounded-2xl p-8 w-full max-w-lg text-center space-y-6">
+
+    <h1 class="text-2xl font-bold text-slate-800">
+      Reto Web: Flask + Tailwind CSS + JavaScript
+    </h1>
+
+    <p id="contenido" class="text-slate-600">
+      Este texto será reemplazado por JavaScript.
+    </p>
+
+    <div id="caja" class="p-4 rounded-lg border border-slate-300 transition-colors duration-300">
+      Esta caja cambiará de estilo.
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-3 justify-center pt-2">
+      <button id="btnMensaje" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+        1. Mostrar mensaje
+      </button>
+      <button id="btnContenido" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-lg transition">
+        2. Cambiar contenido
+      </button>
+      <button id="btnEstilo" class="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 px-4 rounded-lg transition">
+        3. Modificar estilo
+      </button>
+    </div>
+
+    <p id="salidaMensaje" class="text-sm text-indigo-700 font-medium min-h-[20px]"></p>
+
+  </main>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
